@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/soundCircle"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_gravity="center">
+
+        <View
+            android:id="@+id/soundRipple2"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_centerInParent="true"
+            android:alpha="1"
+            android:background="@drawable/circle" />
+
+        <View
+            android:id="@+id/soundRipple3"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true"
+            android:alpha="1"
+            android:background="@drawable/circle_two" />
+
+        <View
+            android:id="@+id/soundRipple4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/static_circle" />
+
+    </RelativeLayout>
+</LinearLayout>
