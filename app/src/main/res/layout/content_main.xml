@@ -15,16 +15,14 @@
             android:layout_width="300dp"
             android:layout_height="300dp"
             android:layout_centerInParent="true"
-            android:alpha="1"
-            android:background="@drawable/circle" />
+            android:background="@drawable/outer_circle" />
 
         <View
             android:id="@+id/soundRipple3"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
             android:layout_centerInParent="true"
-            android:alpha="1"
-            android:background="@drawable/circle_two" />
+            android:background="@drawable/inner_circle" />
 
         <View
             android:id="@+id/soundRipple4"

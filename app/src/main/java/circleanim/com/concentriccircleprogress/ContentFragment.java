@@ -33,23 +33,18 @@ public class ContentFragment extends Fragment {
     private void initViews() {
         final View c1 = rootView.findViewById(R.id.soundRipple2);
         final View c2 = rootView.findViewById(R.id.soundRipple3);
+        final Animation pulse = AnimationUtils.loadAnimation(getActivity(), R.anim.alpha_scale_set);
+        final Animation pulse2 = AnimationUtils.loadAnimation(getActivity(), R.anim.alpha_scale_set);
 
-        final Animation pulse = AnimationUtils.loadAnimation(getActivity(), R.anim.circle);
-        final Animation pulse2 = AnimationUtils.loadAnimation(getActivity(), R.anim.circle);
-
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                c1.startAnimation(pulse);
-            }
-        }, 50);
+        c1.startAnimation(pulse);
 
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
                 c2.startAnimation(pulse2);
             }
-        }, 800);
+        }, 100);
+
 
     }
 
